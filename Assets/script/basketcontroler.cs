@@ -15,6 +15,13 @@ public class basketcontroler : MonoBehaviour
 
         //I feel sick
         //see 1/30 meeting
+        Vector2 moveDirection = context.ReadValue<Vector2>();
+        //print(moveDirection);
+        transform.position += new Vector3(moveDirection.x, 0);
+    }
+    void OnDestroy()
+    {
+        inputs.Player.Move.performed -= MoveBasket;
     }
 
     void OnCollisionEnter(Collision collisionInfo){
@@ -25,6 +32,7 @@ public class basketcontroler : MonoBehaviour
         }
         Destroy(collisionInfo.gameObject);
     }
+
 
     // Update is called once per frame
     void Update()
