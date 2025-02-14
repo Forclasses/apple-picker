@@ -1,4 +1,6 @@
+using UnityEditorInternal.Profiling.Memory.Experimental;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class basketcontroler : MonoBehaviour
 {
@@ -13,8 +15,7 @@ public class basketcontroler : MonoBehaviour
 
     private void MoveBasket(InputAction.CallbackContext context){
 
-        //I feel sick
-        //see 1/30 meeting
+        
         Vector2 moveDirection = context.ReadValue<Vector2>();
         //print(moveDirection);
         transform.position += new Vector3(moveDirection.x, 0);
