@@ -8,14 +8,16 @@ public class GameManger : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        new AppleController(apple);
-        InvokeRepeating(nameof(AppleFall), 1f,1f);
+       // new AppleController(apple);
+       // InvokeRepeating(nameof(AppleFall), 1f,1f);
        //AppleFall(); 
     }
 
-    void AppleFall(){
-        Instantiate(apple, new Vector3(Random.Range(-8f,8f),5,0), Quaternion.identity);
-    }
+    //void AppleFall(){
+    /// <summary>
+    ///    Instantiate(apple, new Vector3(Random.Range(-8f,8f),5,0), Quaternion.identity);
+    /// </summary>
+    //}
 
     // Update is called once per frame
     void Update()
