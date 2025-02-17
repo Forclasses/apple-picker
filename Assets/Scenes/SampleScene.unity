@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 330585545}
   - component: {fileID: 330585544}
   - component: {fileID: 330585547}
+  - component: {fileID: 330585548}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -256,6 +257,22 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &330585548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330585543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2a4eac9cb7c25c49b031f56b9556100, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  basketPrefeb: {fileID: 4158277061682824051, guid: c2fcbc6afa1aa6c4984659d172e57c8d, type: 3}
+  numBaskets: 4
+  basketBottomX: -14
+  basketSpacingX: 10
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -481,11 +498,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2443734929652227705, guid: c2fcbc6afa1aa6c4984659d172e57c8d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 24.43
       objectReference: {fileID: 0}
     - target: {fileID: 2443734929652227705, guid: c2fcbc6afa1aa6c4984659d172e57c8d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -11.3
       objectReference: {fileID: 0}
     - target: {fileID: 2443734929652227705, guid: c2fcbc6afa1aa6c4984659d172e57c8d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -540,6 +557,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2660445410068200768, guid: 45ddb0abbf86cfa4492b62ec5208d7d2, type: 3}
+      propertyPath: changeDirChance
+      value: 0.002
+      objectReference: {fileID: 0}
+    - target: {fileID: 1507288739383245258, guid: 45ddb0abbf86cfa4492b62ec5208d7d2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1864318825131112505, guid: 45ddb0abbf86cfa4492b62ec5208d7d2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 1864318825131112505, guid: 45ddb0abbf86cfa4492b62ec5208d7d2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.18
+      objectReference: {fileID: 0}
     - target: {fileID: 4132974384183867518, guid: 45ddb0abbf86cfa4492b62ec5208d7d2, type: 3}
       propertyPath: m_Name
       value: AppleTree
@@ -603,11 +636,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7947185494156021777, guid: 4d2a213738b06ef4b8d1f787f3d2e154, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.76
+      value: 18.4
       objectReference: {fileID: 0}
     - target: {fileID: 7947185494156021777, guid: 4d2a213738b06ef4b8d1f787f3d2e154, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.8
+      value: -14.48
       objectReference: {fileID: 0}
     - target: {fileID: 7947185494156021777, guid: 4d2a213738b06ef4b8d1f787f3d2e154, type: 3}
       propertyPath: m_LocalPosition.z
