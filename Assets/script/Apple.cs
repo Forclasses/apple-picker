@@ -9,6 +9,7 @@ public class Apple : MonoBehaviour
     
 
     public GameObject treefallboom;
+     public GameObject  branchgoboom;
     // Update is called once per frame
     void Update()
     {
@@ -17,6 +18,12 @@ public class Apple : MonoBehaviour
             
 
         }
+        //Vector3 branchpos = branchgoboom.transform.position;
+       // if(branchpos.y < bottomY){
+        //    Destroy(branchgoboom);
+       //}
+
+
         Vector3 pos = treefallboom.transform.position;
         if(pos.y < bottomY){
             Destroy(treefallboom);

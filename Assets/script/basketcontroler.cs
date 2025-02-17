@@ -1,6 +1,7 @@
 using UnityEditorInternal.Profiling.Memory.Experimental;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class basketcontroler : MonoBehaviour
 {
@@ -35,7 +36,7 @@ public class basketcontroler : MonoBehaviour
         if( collidedWith.CompareTag("Apple")){
             Destroy(collisionInfo.gameObject);
             scoreCounter.score += 100;
-            
+            //print(scoreCounter.score);
         } else if (collidedWith.CompareTag("Branch")){
             Destroy(collisionInfo.gameObject);
             scoreCounter.score = 0;
