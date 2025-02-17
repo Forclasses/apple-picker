@@ -9,6 +9,7 @@ public class AppleTree : MonoBehaviour
     [Header("Inscribed")]
 
     public GameObject appleprefab;
+    public GameObject branchprefab;
     
     public float speed = 1f;
 
@@ -17,6 +18,7 @@ public class AppleTree : MonoBehaviour
     public float changeDirChance = 0.02f;
 
     public float appleDropDelay = 1f;
+    public float appletik = 0.99f;
     void Start()
     {
         Invoke ( "DropApple", 2f );
@@ -49,7 +51,14 @@ public class AppleTree : MonoBehaviour
 
     void DropApple(){
         GameObject apple = Instantiate<GameObject>( appleprefab );
+        GameObject branch = Instantiate<GameObject>( branchprefab);
+        appletik = 0.99f;
+        //branchtik= 0.002f;
+        if(Random.value < appletik){
         apple.transform.position = transform.position;
+        } else {
+            branch.transform.position = transform.position;
+        }
         Invoke ( "DropApple", appleDropDelay );
     }
 

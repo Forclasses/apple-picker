@@ -18,6 +18,7 @@ public class ApplePickertwobogoloo : MonoBehaviour
             GameObject tBasketG0 = Instantiate<GameObject>( basketPrefeb );
             Vector3 pos = Vector3.zero;
             pos.x = basketBottomX + ( basketSpacingX * i);
+            pos.y = -11f;
             tBasketG0.transform.position = pos;
         }
     }
